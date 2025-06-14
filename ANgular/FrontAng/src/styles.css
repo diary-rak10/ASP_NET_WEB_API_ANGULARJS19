@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@import '@angular/material/prebuilt-themes/azure-blue.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.9; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s infinite;
+}
