@@ -1,165 +1,130 @@
-````markdown
-# 🛠️ Application CRUD Produits - ASP.NET Core & Angular
+# 🧩 Projet CRUD Produits - ASP.NET Core & Angular
 
-Ce projet est une application web **fullstack moderne** développée avec :
-- **Back-end** : ASP.NET Core Web API (C#)
-- **Front-end** : Angular 17
-- **Base de données** : PostgreSQL avec Entity Framework Core
-
-Il s’agit d’un mini-projet de type CRUD permettant de gérer une liste de produits, avec un design responsive, fluide et adapté aux tendances 2025.
+> **Application Web FullStack** permettant la gestion de produits à l'aide d'une API REST développée avec **ASP.NET Core** et un front-end dynamique construit avec **Angular**.
 
 ---
 
-## 🧰 Technologies utilisées
+## 🚀 Technologies utilisées
 
-| Côté | Outils/Technologies |
-|------|---------------------|
-| 🔧 Backend | ASP.NET Core 8, Entity Framework Core, C# |
-| 🌐 Frontend | Angular 17+, TypeScript, HTML5, SCSS/CSS |
-| 🗄️ Base de données | PostgreSQL |
-| 🧪 Outils | dotnet-ef, Angular CLI, Visual Studio Code / Rider |
+| Frontend       | Backend        | Base de données | ORM                   | Outils               |
+|----------------|----------------|------------------|------------------------|-----------------------|
+| Angular 17     | ASP.NET Core 8 | PostgreSQL       | Entity Framework Core | .NET CLI, Angular CLI |
 
 ---
 
-## ✨ Fonctionnalités
+## 🎯 Fonctionnalités principales
 
-- 📦 Création de produit
-- 📝 Modification d’un produit
-- ❌ Suppression d’un produit
-- 🔍 Affichage de tous les produits
-- 🔄 Connexion API Angular ↔ ASP.NET Core
-- 🎨 Interface utilisateur moderne et réactive
-
----
-
-## 🖼️ Aperçu de l’interface
-
-> (Ajoutez ici une capture d’écran, ou utilisez `Ctrl + Shift + S` pour en faire une depuis le navigateur)
-
-- Interface responsive
-- Design tendance avec **Glassmorphism**, animations CSS, et **Google Fonts modernes**
-- Expérience utilisateur fluide
+- ✅ Création de produit  
+- ✏️ Modification de produit  
+- ❌ Suppression de produit  
+- 📋 Affichage de la liste des produits  
+- 🔁 Communication Front <-> API REST  
+- 🎨 Interface moderne et responsive  
 
 ---
 
-## 🔧 Installation et configuration
+## ⚙️ Installation & Exécution
 
-### 1. 📁 Cloner le dépôt
+### 🔧 1. Configuration du Backend (.NET)
 
-```bash
-git clone https://github.com/votre-utilisateur/nom-du-projet.git
-cd nom-du-projet
-````
-
----
-
-### 2. ⚙️ Configuration du backend (ASP.NET Core)
-
-#### a. Paramétrer la chaîne de connexion dans `appsettings.json`
-
+1. Configurer la base de données dans `appsettings.json` :
 ```json
 "ConnectionStrings": {
   "DefaultConnection": "Host=localhost;Port=5432;Database=ProductDb;Username=postgres;Password=your_password"
 }
 ```
 
-> Remplace `your_password` par ton mot de passe PostgreSQL.
-
-#### b. Appliquer les migrations Entity Framework
-
+2. Appliquer les migrations :
 ```bash
-cd CrudAngularASP
-dotnet tool restore
+dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
 
-#### c. Lancer le serveur backend
-
+3. Démarrer l'API :
 ```bash
 dotnet run
 ```
 
-* Par défaut, l’API est accessible sur : `http://localhost:5046/api/products`
+> Accès API : `http://localhost:5046/api/products`
 
 ---
 
-### 3. 💻 Configuration du frontend (Angular)
+### 💻 2. Configuration du Frontend (Angular)
 
+1. Aller dans le dossier Angular :
 ```bash
 cd ClientApp
+```
+
+2. Installer les dépendances :
+```bash
 npm install
+```
+
+3. Lancer Angular :
+```bash
 ng serve
 ```
 
-* Application disponible sur : `http://localhost:4200`
+> Accès Frontend : `http://localhost:4200`
 
 ---
 
-## 📁 Arborescence du projet
+## 🗂️ Structure du projet
 
 ```
-📦 Projet CRUD Produits
-├── CrudAngularASP/              → Backend ASP.NET Core
+├── CrudAngularASP/
 │   ├── Controllers/
 │   ├── Models/
 │   ├── Repositories/
 │   ├── Services/
-│   ├── Data/                    → DbContext & Migrations EF
-│   └── appsettings.json
-│
-└── ClientApp/                   → Frontend Angular
-    ├── src/
-    │   ├── app/
-    │   │   ├── components/
-    │   │   │   ├── home/
-    │   │   │   ├── product-list/
-    │   │   │   └── product-form/
-    │   │   ├── services/
-    │   │   └── app.module.ts
-    └── angular.json
+│   └── Program.cs
+├── ClientApp/
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── components/
+│   │   │   └── services/
+│   │   └── index.html
 ```
 
 ---
 
-## 🔄 Exemple d’appel API
+## 👨‍💻 Auteur du projet
 
-### ➕ POST `/api/products`
+- **Nom :** RAKOTONIRINA Diariniaina Nomenjanahary  
+- **Université :** Université de Fianarantsoa  
+- **École :** EMIT (École de Management et d’Innovation Technologique)  
+- **Niveau :** 2e année de Licence - Développement Intranet & Internet  
+- **Email :** diariniainarakoto0405@gmail.com  
+- **Téléphone :** 038 239 6920
 
-```json
-{
-  "name": "Clavier mécanique RGB",
-  "price": 89.99
-}
+---
+
+## 📝 Remarques
+
+- Ce projet est un exemple de base de la structure CRUD en Angular + ASP.NET Core.
+- Possibilité d'étendre avec authentification, pagination, recherche dynamique, etc.
+- UI conçue pour s’aligner avec les standards UI/UX 2025.
+
+---
+
+## ✅ Objectif pédagogique
+
+- Apprendre à connecter Angular avec une API ASP.NET Core
+- Comprendre le fonctionnement d’Entity Framework Core
+- Appliquer la séparation des couches (Controller, Service, Repository)
+- Réaliser une application web propre et responsive
+
+---
+
+## 📸 Capture d’écran (à ajouter)
+
+```
+![Aperçu de l'application](./screenshot.png)
 ```
 
-### 📄 GET `/api/products`
-
-Retourne tous les produits.
-
 ---
 
-## 📖 Auteur du projet
+## 🏁 Conclusion
 
-👤 **RAKOTONIRINA Diariniaina Nomenjanahary**
-Étudiant en 2e année de Licence à l’EMIT – Université de Fianarantsoa
-📍 Lot AKM IV 98 bis, Alakamisy Fenoarivo
-📧 [diariniainarakoto0405@gmail.com](mailto:diariniainarakoto0405@gmail.com)
-📞 038 23 969 20
-
----
-
-## 📜 Licence
-
-Ce projet est à but **pédagogique**. Vous pouvez le modifier et l’adapter librement.
-
----
-
-## 📌 À faire (améliorations futures)
-
-* Authentification (login / token JWT)
-* Pagination des produits
-* Export PDF / Excel
-* Déploiement sur un serveur distant (Azure, Vercel, etc.)
-
-
-
+Projet idéal pour s’initier au développement web FullStack moderne en utilisant des outils professionnels dans un contexte académique ou professionnel.
