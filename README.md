@@ -158,12 +158,17 @@ Ce projet est à but **pédagogique**. Vous pouvez le modifier et l’adapter li
 
 ---
 
+## 📌 À faire (améliorations futures)
+
+* Authentification (login / token JWT)
+* Pagination des produits
+* Export PDF / Excel
+* Déploiement sur un serveur distant (Azure, Vercel, etc.)
 
 ---
 
 ```
 
 ---
-
 
 ```
