@@ -8,7 +8,7 @@
 
 | Frontend       | Backend        | Base de données | ORM                   | Outils               |
 |----------------|----------------|------------------|------------------------|-----------------------|
-| Angular 17     | ASP.NET Core 8 | PostgreSQL       | Entity Framework Core | .NET CLI, Angular CLI |
+| Angular 19     |ASP.NETWEB API | PostgreSQL       | Entity Framework Core | .NET CLI, Angular CLI |
 
 ---
 
