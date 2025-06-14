@@ -94,7 +94,7 @@ ng serve
 - **Nom :** RAKOTONIRINA Diariniaina Nomenjanahary  
 - **Université :** Université de Fianarantsoa  
 - **École :** EMIT (École de Management et d’Innovation Technologique)  
-- **Niveau :** 2e année de Licence - Développement Intranet & Internet  
+- **Niveau :** 3e année de Licence - Développement Intranet & Internet  
 - **Email :** diariniainarakoto0405@gmail.com  
 - **Téléphone :** 038 239 6920
 
