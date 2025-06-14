@@ -1,3 +1,6 @@
+
+
+````markdown
 # 🧩 Projet CRUD Produits - ASP.NET Core & Angular
 
 > **Application Web FullStack** permettant la gestion de produits à l'aide d'une API REST développée avec **ASP.NET Core** et un front-end dynamique construit avec **Angular**.
@@ -128,3 +131,6 @@ ng serve
 ## 🏁 Conclusion
 
 Projet idéal pour s’initier au développement web FullStack moderne en utilisant des outils professionnels dans un contexte académique ou professionnel.
+````
+
+
